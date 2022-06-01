@@ -66,7 +66,7 @@ ROOM 2
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,n,0
 0,c,c,0,c,c,0,c,c,0,c,c,0,c,c,0
-0,i,i,0,1a,i,0,0,0,0,0,0,0,0,0,0
+0,i,i,0,1a,0,0,1a,1b,0,0,1b,0,v,v,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
@@ -655,6 +655,17 @@ TIL 1a
 11111111
 WAL true
 
+TIL 1b
+00000000
+00000000
+00000011
+00000011
+00000011
+00000011
+11111111
+11111111
+WAL true
+
 SPR A
 00000000
 00111100
@@ -715,6 +726,8 @@ SPR b
 00111100
 00011000
 00011000
+NAME amigo
+DLG 3
 POS 2 12,8
 
 ITM 0
@@ -747,7 +760,7 @@ DLG 0
   - {shk}...{shk}
 }{pg}te entendo, também passo por isso.{pg}é cíclico, né?{pg}acorda{pg}come{pg}liga o computador{pg}trabalha{pg}estuda{pg}descansa {rbw}(pouco){rbw}{pg}dorme {shk}(ou não né){shk}{pg}acorda.{pg}{exit "1" 0 0 "wave"}
 """
-NAME cat dialog
+NAME minhoca dialog
 
 DLG 1
 You found a nice warm cup of tea
@@ -756,6 +769,10 @@ NAME tea dialog
 DLG 2
 A key! {wvy}What does it open?{wvy}
 NAME key dialog
+
+DLG 3
+ quem tem amigo tem {wvy}tudo.{wvy}{pg}uma vez um {rbw}amigo{rbw} meu me falou, e eu nunca mais esqueci:{pg}
+NAME amigo dialog
 
 VAR a
 42
